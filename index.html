@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BishaParking</title>
+    <script defer src="script.js"></script>
+    <!-- Load GUN itself. -->
+    <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+    <!-- Load jQuery to help make things a bit easier. -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+  <header class="header">
+        <nav class="nav">
+          <img src="./img/bishaparkingg.png" alt="" class="nav__logo" id="logo" data-version-number="3.0" />
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a class="nav__link" href="#">OUR APP</a>
+            </li>
+            <li class="nav__item">
+                    <a class="nav__link" href="#">HELP</a>
+                  </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">SIGN IN</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link nav__link--btn btn--show-modal" href="#">SIGN UP</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__title">
+              <h1>
+                PARKING 
+                <span class="highlight">JUST GOT</span>
+                A LOT<br />
+                <span class="highlight">SIMPLER</span>
+              </h1>
+              <h4>Book the Best Spaces & Save Up your time!</h4>
+              <button class="btn--text btn--scroll-to">
+                <div class="get-app">
+                  <a href="#"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png?hl=id" alt=""></a>
+                  <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/5cb86c018dfc8ca29e4e4b2b/1585767173618-DQWYTZI9LXP26S4FDUWO/app-store-badge.png" alt=""></a>
+                </div>
+              </button>
+              <img
+              src=""
+              class="header__img"
+              alt=""
+              />
+            </div>
+          </header>
+          
+          <section class="section" id="section--1">
+            <div class="section__title">
+              <h2 class="section__description">ParkingFinder</h2>
+            </div>
+            
+      <div class="features">
+        <img
+          src="./img/iphone-map.png"
+          data-src="./img/iphone-map.png"
+          alt="iphone-map"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">DISCOVER AMAZING SPACES</h5>
+          <p>
+            Find parking anywhere, for now or for later Compare prices & pick the place that’s best for you
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">
+            RESERVE, PREPAY & SAVE
+          </h5>
+          <p>Book a space in just a few easy clicks Save up your time</p>
+        </div>
+        <img
+          src="./img/map-street.png"
+          data-src="./img/map-street.png" 
+          alt="Plant"
+          class="features__img lazy-img"
+          id="plant"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/random-static.parkwhiz/videos/how-it-works-drive-arrive-park-white@2x.jpg"
+          data-src="https://s3.amazonaws.com/random-static.parkwhiz/videos/how-it-works-drive-arrive-park-white@2x.jpg"
+          alt="Credit card"
+          id="car-parked"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">THE PEOPLE AGREE</h5>
+            <p>
+               We asked <strong style="font-size: 20px;"> 
+                33
+             </strong> people, and
+              <strong style="font-size: 20px;">
+                90.91% 
+              </strong> 
+                have trouble finding parking in their cities
+              <strong style="font-size: 20px;">
+                90.63% 
+              </strong> 
+                find the process of finding parking frustrating
+              <strong style="font-size: 20px;">
+                75.76% 
+              </strong> 
+                take around 15-30 minutes to find parking space
+              <strong style="font-size: 20px;">72.73% </strong> say it takes long to find parking in a city
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h3 class="section__header">Download the FREE BishaParking App</h3>
+      </div>
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1">
+            Hassle-Free Booking
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+          No-Surprise Pricing
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+           Lighting-Fast Parking
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Hassle-Free Booking</h5>
+          <p>
+            Identify if a space is free with a few taps and skip the parking hunt.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">No-Surprise Pricing</h5>
+          <p>
+            Compare prices, see your total cost up-front, and don't waste your time.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Lighting-Fast Parking</h5>
+          <p>
+            Park your car in seconds and go do your thing.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best time to take the app is now!
+        </h3>
+      </div>
+      <a href="https://www.figma.com/proto/X36ffhr0svsV6YqRI4YoOT/Bisha-Parking?node-id=1%3A4&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A4" target="_blank">
+        <button class="btn btn--show-modal">GET STARTED!</button>
+      </a>
+      <div class="get-app">
+        <a href="#">
+          <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png?hl=id" alt="">
+        </a>
+        <a href="#">
+          <img src="https://images.squarespace-cdn.com/content/v1/5cb86c018dfc8ca29e4e4b2b/1585767173618-DQWYTZI9LXP26S4FDUWO/app-store-badge.png" alt="">
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Features</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Rules</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Our app</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Help</a>
+                </li>
+            </ul>
+            <img src="./img/bishaparkingg.png" alt="Logo" class="footer__logo" />
+            <p class="footer__copyright">
+                &copy; Copyright by
+                <a class="footer__link" href="#">BishaParking</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+
+      const db = Gun(location.href + '/votes').get('votes')
+
+      const form = $('#vote-form');
+      const testimonials = $('.testimonial')
+
+      db.on(function (data) {
+          Object.keys(data).map(key => {
+            console.dir($(document.getElementById(key)).find('.count'))
+              $(document.getElementById(key)).find('.count').text(data[key]);
+          })
+      });
+      form.on('submit', function (event) {
+          const first = form.find('#first');
+          const last = form.find('#last');
+          let name = first.val();
+          if (name.match(/joe/gi)) {
+              name = 'joe';
+          } else if (name.match(/donald/gi)) {
+              name = 'donald';
+          } else if (name.match(/hillary/gi)) {
+              name = 'hillary';
+          }
+          db.once(function(data) {
+              const count = (data?.[name] || 0) + 1;
+              db.put({ [name]: count });
+          });
+          first.val('');
+          last.val('');
+          event.preventDefault()
+      });
+    </script>
+  </body>
+</html>
